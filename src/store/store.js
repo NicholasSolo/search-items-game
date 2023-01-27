@@ -3,7 +3,7 @@ import { computed, reactive } from 'vue';
 import startTimer, { resetTime, pauseTimer } from '../composables/timer';
 
 const state = reactive({
-  popupName: 'FinalPopup',
+  popupName: '',
   isGameActive: false,
   currentItemsCount: 0,
   totalItemsCount: 0,
@@ -18,8 +18,10 @@ const getProgress = computed(() => {
     return 70;
   } else if (state.totalItemsCount >= 12 && state.totalItemsCount < 14) {
     return 90;
-  } else if (state.totalItemsCount >= 14) {
+  } else if (state.totalItemsCount >= 14 && state.totalItemsCount < 15) {
     return 99;
+  } else if (state.totalItemsCount === 15) {
+    return 100;
   }
   return 0;
 });
@@ -59,8 +61,8 @@ const methods = {
     startTimer(() => {
       if (state.totalItemsCount < 1) {
         this.setPopupName.call(methods, 'TimeoutPopup');
-      } else if (state.totalItemsCount >= 1 && state.totalItemsCount < 15) {
-        this.setPopupName.call(methods, 'EmailPopup');
+      } else if (state.totalItemsCount >= 1 && state.totalItemsCount <= 15) {
+        this.setPopupName.call(methods, 'FinalPopup');
       }
       pauseTimer();
     });

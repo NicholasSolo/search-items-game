@@ -57,11 +57,6 @@ defineProps({
 
     .content {
       max-width: 1280px;
-
-      &:before {
-        right: -116px;
-        top: -122px;
-      }
     }
   }
 
@@ -160,33 +155,6 @@ defineProps({
         display: none;
       }
     }
-
-    &:before {
-      content: '';
-      position: absolute;
-      width: 675px;
-      height: 173px;
-      right: -181px;
-      top: -137px;
-      background-image: url('/assets/img/header/decor.png');
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-  }
-}
-
-@media screen and (max-width: 1230px) {
-  .header {
-    &._game {
-      .content {
-        &:before {
-          width: 465px;
-          height: 133px;
-          right: -51px;
-          top: -91px;
-        }
-      }
-    }
   }
 }
 
@@ -197,13 +165,6 @@ defineProps({
     .content {
       .logo-link {
         display: none;
-      }
-
-      &:before {
-        width: 415px;
-        height: 173px;
-        right: -27px;
-        top: -90px;
       }
     }
 
@@ -216,24 +177,6 @@ defineProps({
         .logo-link {
           display: block;
           margin-right: 56px;
-        }
-
-        &:before {
-          right: -31px;
-          top: -65px;
-          width: 380px;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .header {
-    &._game {
-      .content {
-        &:before {
-          display: none;
         }
       }
     }
@@ -307,10 +250,6 @@ defineProps({
             line-height: 32px;
           }
         }
-
-        &:before {
-          display: none;
-        }
       }
     }
   }
@@ -332,15 +271,6 @@ defineProps({
 @media (max-width: 736px) and (orientation: landscape) {
   .header {
     padding-top: 14px;
-
-    .content {
-      &:before {
-        width: 315px;
-        height: 83px;
-        right: -38px;
-        top: -46px;
-      }
-    }
   }
 }
 
@@ -395,10 +325,6 @@ defineProps({
             line-height: 32px;
           }
         }
-
-        &:before {
-          display: none;
-        }
       }
     }
   }
@@ -407,15 +333,6 @@ defineProps({
 @media screen and (max-width: 500px) {
   .header {
     padding-top: 16px;
-
-    .content {
-      &:before {
-        width: 311px;
-        height: 133px;
-        right: -78px;
-        top: -49px;
-      }
-    }
   }
 }
 </style>

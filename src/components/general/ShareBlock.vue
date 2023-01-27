@@ -22,24 +22,24 @@ const ogImage = `${URL}/favicon.png`;
 const social = [
   {
     name: 'Whatsapp',
-    img: '/assets/img/footer/wa.svg',
+    img: '/assets/img/share/wa.svg',
     link: `https://api.whatsapp.com/send?&text=${URL + ' ' + ogDescription}`,
   },
   {
     name: 'Telegram',
-    img: '/assets/img/footer/tg.svg',
+    img: '/assets/img/share/tg.svg',
     link: encodeURI(`https://t.me/share/url?url=${URL}&text=${ogDescription}`),
   },
   {
     name: 'VK',
-    img: '/assets/img/footer/vk.svg',
+    img: '/assets/img/share/vk.svg',
     link: encodeURI(
       `https://vk.com/share.php?url=${URL}&title=${ogTitle}&description=${ogDescription}&image=${ogImage}&noparse=false`
     ),
   },
   {
     name: 'OK',
-    img: '/assets/img/footer/ok.svg',
+    img: '/assets/img/share/ok.svg',
     link: encodeURI(
       `https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.shareUrl=${URL}&st.comments=${ogTitle}`
     ),

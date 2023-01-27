@@ -48,7 +48,7 @@ const clickHandler = () => {
   }
 
   if (mainState.totalItemsCount === 15) {
-    mainMethods.setPopupName('EmailPopup');
+    mainMethods.setPopupName('FinalPopup');
 
     pauseTimer();
   }

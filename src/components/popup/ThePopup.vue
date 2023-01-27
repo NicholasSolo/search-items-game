@@ -1,12 +1,5 @@
 <template>
-  <div
-    :class="[
-      'the-popup',
-      {
-        '_final-land': mainState.popupName === 'FinalPopup',
-      },
-    ]"
-  >
+  <div :class="['the-popup']">
     <div class="content">
       <component :is="popups[getCurrentPopup]" />
     </div>
@@ -15,7 +8,7 @@
 
 <script setup>
 import { computed } from 'vue';
-import { mainState, mainMethods } from '../../store/store';
+import { mainState } from '../../store/store';
 import FinalPopup from './components/FinalPopup.vue';
 import TimeoutPopup from './components/TimeOutPopup.vue';
 
@@ -62,13 +55,6 @@ const getCurrentPopup = computed(() => {
     .content {
       width: 300px;
       border-radius: 30px;
-    }
-
-    &._final-land {
-      .content {
-        max-width: 630px;
-        width: 100%;
-      }
     }
   }
 }

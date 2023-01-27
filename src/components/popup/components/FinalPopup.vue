@@ -57,6 +57,7 @@ const restart = () => {
   flex-direction: column;
   align-items: center;
   padding: 47px 0 45px 0;
+  text-align: center;
 
   .top {
     display: flex;
@@ -73,7 +74,6 @@ const restart = () => {
     }
 
     .subtitle {
-      max-width: 340px;
       font-size: 24px;
       line-height: 32px;
       color: #5b5b5b;
@@ -120,8 +120,8 @@ const restart = () => {
   .final-popup {
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;
-    padding: 20px 27px 0 62px;
+    justify-content: center;
+    padding: 29px 10px 27px 10px;
 
     .top {
       margin-bottom: 16px;
@@ -173,7 +173,7 @@ const restart = () => {
 
 @media screen and (max-width: 700px) {
   .final-popup {
-    padding: 29px 0 27px 0;
+    padding: 29px 10px 27px 10px;
 
     .top {
       margin-bottom: 8px;
@@ -214,7 +214,7 @@ const restart = () => {
 
 @media (max-width: 700px) and (orientation: landscape) {
   .final-popup {
-    padding: 20px 27px 9px 62px;
+    padding: 20px 10px 20px 10px;
 
     .go-to-site {
       display: none;
