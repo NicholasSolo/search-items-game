@@ -1,5 +1,7 @@
 # А ты сможешь найти все предметы, спрятанные в комнатах? :)
 
+[Переходи по ссылке и проверь](https://nicholassolo.github.io/search-items-game/)
+
 
 ## Project Setup
 
